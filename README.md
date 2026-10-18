@@ -47,48 +47,9 @@ The project implements the following capabilities:
 ---
 
 ## 🏗️ Architecture Overview
+https://github.com/devopsgrace/Kubernetes_Containerization_Deployment/blob/main/mermaid-diagram.png
+https://github.com/devopsgrace/Kubernetes_Containerization_Deployment/blob/main/Kubertes%20deployment%20from%20monolith%20to%20microservices%20automation.txt
 
-### Architecture Diagram
-The architecture should illustrate the following workflow:
-
-Developer
-    |
-    v
-Git Repository (GitHub)
-    |
-    v
-Jenkins CI/CD Pipeline
-    |
-    +------------------------+
-    |                        |
-    v                        v
-Build and Test          Terraform
-    |                        |
-    v                        v
-Docker Image            AWS Infrastructure
-    |                    VPC / Subnets
-    v                        |
-Container Registry           v
-(Docker Hub or ECR)      AWS EKS Cluster
-    |                        |
-    +------------------------+
-                             |
-                             v
-                     Kubernetes Deployment
-                             |
-               +-------------+-------------+
-               |             |             |
-               v             v             v
-             Pod 1         Pod 2         Pod 3
-               |             |             |
-               +-------------+-------------+
-                             |
-                             v
-                    Kubernetes Service
-                             |
-                             v
-                       Application Users
-```
 
 **Supporting components**
 
